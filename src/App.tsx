@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Global from './style/global';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Global />
+      <header>
+        <h1>Teste</h1>
+        <h2>Teste</h2>
+        <h3>Teste</h3>
       </header>
+      <main>
+        <p>Teste</p>
+        <span>Teste</span>
+        <button>Teste</button>
+        <section>
+          <select name="Teste" id="">Teste
+            <object data="" type="">Teste</object>
+          </select>
+        </section>
+      </main>
+      <footer>
+        <form action="">
+          <input type="text" placeholder='Teste'/>
+        </form>
+      </footer>
     </div>
   );
 }
