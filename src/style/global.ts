@@ -11,7 +11,7 @@ const Global = createGlobalStyle`
 
         margin: 0;
         padding: 0;
-        box-sizing: 0;
+        box-sizing: border-box;
 
         list-style: none;
     }
@@ -55,6 +55,7 @@ const Global = createGlobalStyle`
         margin: 0;
         padding: 0;
         color: var(--black);
+        font-family: 'Montserrat', sans-serif;
     }
 `;
 
