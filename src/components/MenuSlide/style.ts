@@ -44,14 +44,15 @@ const Menu = styled.div`
         0.3s forwards; 
     `}
 
-    .home, .projects, .contact{
+    .home, .projects, .contact, .linkedin, .github{
+        width: 100%;
+        text-align: center;
         color: white;
         font-size: 18px;
         font-weight: 600;
-        padding: 20px;
-        width: 100%;
+        text-decoration: none;
         border-bottom: 4px solid grey;
-        border-radius: initial;
+        padding: 20px 0px;
         transition: .3s;
         :hover{
             color: var(--blue);

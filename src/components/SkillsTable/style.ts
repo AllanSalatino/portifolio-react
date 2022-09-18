@@ -9,6 +9,7 @@ const Container = styled.div`
     border-top: 2px solid var(--greyGradient);
     align-items: center;
     margin-top: 15px;
+    margin-bottom: 40px;
     height: 500px;
     & > h2{
         position: relative;

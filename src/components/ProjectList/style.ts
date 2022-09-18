@@ -31,6 +31,10 @@ const List = styled.ul`
   border-top: 2px solid var(--greyGradient);
   margin-bottom: 15px;
   animation: ${gradient} 1s forwards;
+
+  & > a{
+    text-decoration: none;
+  }
   & > h2 {
     position: relative;
     top: -10px;
@@ -50,7 +54,7 @@ export const Card = styled.li`
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 15px;
-  box-shadow: 0px 0px 20px grey;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0, .3);
   animation: ${slide} ${({index}: IStyledProps) => (index + 1)}s forwards;
   transition: .3s;
   :hover{
@@ -58,10 +62,11 @@ export const Card = styled.li`
     height: 230px;
   }
 
-  & > div {
+  & > img {
     width: 100%;
     height: 150px;
-    background-color: grey;
+    border: 1px solid rgb(0, 0, 0, .3);
+    border-top: none;
     border-radius: 8px;
     margin-bottom: 10px;
   }
